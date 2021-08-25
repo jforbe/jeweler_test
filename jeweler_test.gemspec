@@ -20,11 +20,14 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".document",
+    ".ruby-version",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "jeweler_test.gemspec",
     "lib/jeweler_test.rb",
     "test/helper.rb",
     "test/test_jeweler_test.rb"
