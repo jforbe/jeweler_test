@@ -1,15 +1,12 @@
-source "https://rubygems.org"
-# Add dependencies required to use your gem here.
-# Example:
-#   gem "activesupport"
+# frozen_string_literal: true
 
-# Add dependencies to develop your gem here.
-# Include everything needed to run rake, tests, features, etc.
+source 'https://rubygems.org'
+
 group :development do
-  gem "shoulda"
-  gem "rdoc"
-  gem "bundler"
-  gem "jeweler"
-  gem "simplecov"
-  gem "rspec"
+  gem 'bundler'
+  gem 'jeweler'
+  gem 'rdoc'
+  gem 'rspec'
+  gem 'shoulda'
+  gem 'simplecov'
 end
