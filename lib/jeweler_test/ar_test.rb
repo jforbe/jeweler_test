@@ -1,7 +1,10 @@
 # frozen_string_literal: true
 
-class ArTest
-  def self.version
-    puts ActiveRecord.version
+module JewelerTest
+  # active record version
+  class ArTest
+    def self.version
+      puts ActiveRecord.version
+    end
   end
 end

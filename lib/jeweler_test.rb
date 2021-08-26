@@ -1,14 +1,8 @@
 # frozen_string_literal: true
 
 # tester of gem stuff
-class JewelerTest
-  def self.hi
-    puts 'Hello world!'
-  end
-
-  def self.activerecord_version
-    ArTest.version
-  end
-
+module JewelerTest
+  require 'jeweler_test/ar_test'
+  require 'jeweler_test/hello'
 end
 
