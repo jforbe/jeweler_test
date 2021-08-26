@@ -3,6 +3,8 @@
 module JewelerTest
   # active record version
   class ArTest
+    require 'active_record'
+
     def self.version
       puts ActiveRecord.version
     end
