@@ -6,7 +6,7 @@ class JewelerTest
     puts 'Hello world!'
   end
 
-  def activerecord_version
+  def self.activerecord_version
     ArTest.version
   end
 
