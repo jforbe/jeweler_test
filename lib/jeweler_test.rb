@@ -4,5 +4,6 @@
 module JewelerTest
   require 'jeweler_test/ar_test'
   require 'jeweler_test/hello'
+  require 'app/models/company'
+  require 'app/models/price'
 end
-
