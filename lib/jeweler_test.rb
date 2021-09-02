@@ -8,9 +8,8 @@ module JewelerTest
   require 'app/models/company'
   require 'app/models/price'
 
-  class << self
-    def ar_version
-      ArTest.version
-    end
+  def ar_version
+    ArTest.version
   end
+
 end
