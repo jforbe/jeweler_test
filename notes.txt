@@ -1,4 +1,4 @@
 rake version:bump:patch
 rake gemspec
-git commit -a -m "made some changes"
+git commit -a -m 'made some changes'
 rake release

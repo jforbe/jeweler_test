@@ -5,7 +5,7 @@ module JewelerTest
   require 'active_record'
 
   # active record version
-  class ArTest
+  class ArTester
     def self.version
       puts ActiveRecord.version
     end

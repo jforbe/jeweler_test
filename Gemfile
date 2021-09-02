@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'activerecord'
+gem 'pg'
 
 group :development do
   gem 'bundler'
