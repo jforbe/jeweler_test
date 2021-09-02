@@ -8,7 +8,7 @@ module JewelerTest
   class Database
     def self.connect
       begin
-        config = YAML.safe_load(IO.read('./config/database.yml'))
+        config = YAML.load(IO.read('./config/database.yml'))
       rescue Errno::ENOENT
         puts "YAML configuration file couldn't be found. Using defaults."
         return
