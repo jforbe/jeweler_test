@@ -2,6 +2,7 @@
 
 # test database connect
 module JewelerTest
+  require 'erb'
   require 'yaml'
 
   # Configuration defaults
@@ -14,9 +15,9 @@ module JewelerTest
       env
     end
 
-    def self.connect
+    def self.read_config
       begin
-        config = YAML.load(IO.read('./config/database.yml'))
+        config = ERB.new(File.read('./config/database.yml'))
       rescue Errno::ENOENT
         puts "YAML configuration file couldn't be found."
         return
@@ -24,7 +25,12 @@ module JewelerTest
         puts 'YAML configuration file contains invalid syntax.'
         return
       end
-      config[environment]
+      config
+    end
+
+    def self.connect
+      connection_params = (YAML.load(read_config.result(binding)))[environment]
+      ActiveRecord::Base.establish_connection(connection_params)
     end
 
   end
